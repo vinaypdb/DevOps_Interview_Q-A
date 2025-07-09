@@ -1,301 +1,351 @@
-### Docker Multiple Choice Questions (MCQs)
+**Docker Multiple Choice Questions (MCQs)**
 
-**1. What is Docker primarily used for?**
-a) Virtualization
-b) Configuration Management
-c) Containerization
-d) Operating System
+1. What is Docker primarily used for?
 
-**2. Which of the following is a Docker component?**
-a) Docker Engine
-b) Docker Kernel
-c) Docker BIOS
-d) Docker CPU
+* A. Virtualization
+* B. Containerization
+* C. Orchestration
+* D. Monitoring
 
-**3. Docker containers are based on which technology?**
-a) VirtualBox
-b) Hyper-V
-c) LXC
-d) BIOS
+2. What does a Docker container contain?
 
-**4. Which file is used to build a Docker image?**
-a) Dockerbuild
-b) Dockerfile
-c) Dockercompose
-d) Dockerengine
+* A. A virtual machine
+* B. Application and its dependencies
+* C. Only source code
+* D. Just the OS
 
-**5. What is the default Docker network driver?**
-a) overlay
-b) host
-c) none
-d) bridge
+3. Which of the following best defines Docker?
 
-**6. Which command is used to list running containers?**
-a) docker ps
-b) docker list
-c) docker show
-d) docker status
+* A. Package manager
+* B. Cloud provider
+* C. Container platform
+* D. Virtual machine monitor
 
-**7. What command is used to build a Docker image?**
-a) docker create
-b) docker build
-c) docker image
-d) docker run
+4. What command is used to build a Docker image?
 
-**8. Docker images are:**
-a) Writable
-b) Executable
-c) Read-only
-d) Dynamic
+* A. docker run
+* B. docker image
+* C. docker build
+* D. docker create
 
-**9. What is the official public Docker image repository?**
-a) Docker Market
-b) Docker Hub
-c) Docker Repo
-d) Docker Store
+5. What file is used to define instructions to build a Docker image?
 
-**10. Which of the following will remove a container?**
-a) docker delete
-b) docker remove
-c) docker rm
-d) docker rmi
+* A. Dockerfile
+* B. docker-compose.yml
+* C. imagefile
+* D. containerfile
 
-**11. What does the command `docker rmi` do?**
-a) Removes a container
-b) Removes an image
-c) Removes a volume
-d) Removes a registry
+6. Which command lists all running containers?
 
-**12. Which of the following commands starts a container in interactive mode?**
-a) docker start
-b) docker run -i
-c) docker run -it
-d) docker exec
+* A. docker ps
+* B. docker images
+* C. docker containers
+* D. docker list
 
-**13. What is the purpose of a Docker volume?**
-a) Increase performance
-b) Store container logs
-c) Persist data
-d) Backup containers
+7. What does the `docker run` command do?
 
-**14. Which command is used to create a volume?**
-a) docker volume build
-b) docker volume create
-c) docker volume init
-d) docker make volume
+* A. Builds a container
+* B. Runs a new container
+* C. Deletes a container
+* D. Lists containers
 
-**15. Which of the following can be used to define multi-container apps?**
-a) Dockerfile
-b) Docker Engine
-c) docker-compose.yml
-d) Docker CLI
+8. How do you stop a running Docker container?
 
-**16. Which command stops a running container?**
-a) docker exit
-b) docker kill
-c) docker pause
-d) docker stop
+* A. docker end \<container\_id>
+* B. docker halt \<container\_id>
+* C. docker stop \<container\_id>
+* D. docker killall
 
-**17. Which is NOT a valid Docker network driver?**
-a) bridge
-b) host
-c) public
-d) overlay
+9. What command removes a Docker image?
 
-**18. Which command is used to see logs of a container?**
-a) docker show
-b) docker logs
-c) docker status
-d) docker info
+* A. docker image rm <image>
+* B. docker delete image <image>
+* C. docker rmi <image>
+* D. Both A and C
 
-**19. Docker containers are:**
-a) Lightweight VMs
-b) Full OS environments
-c) Application sandboxes
-d) BIOS-level interfaces
+10. What is Docker Hub?
 
-**20. What does `docker exec` allow you to do?**
-a) Run a container
-b) Build an image
-c) Run a command inside a running container
-d) Stop a container
+* A. Local registry
+* B. CI/CD tool
+* C. Public image registry
+* D. Monitoring dashboard
 
-**21. What is the Docker daemon?**
-a) CLI utility
-b) Docker image
-c) Background process that manages containers
-d) Dockerfile executor
+11. Which file is used with Docker Compose?
 
-**22. What command shows both running and stopped containers?**
-a) docker ps -a
-b) docker ls -all
-c) docker show all
-d) docker list
+* A. Dockerfile
+* B. app.yaml
+* C. docker-compose.yml
+* D. composefile.txt
 
-**23. Docker Compose is used for:**
-a) Building images
-b) Monitoring containers
-c) Managing multi-container applications
-d) Pushing images
+12. What is a Docker Volume used for?
 
-**24. Which port is commonly used by Docker daemon REST API?**
-a) 80
-b) 2375
-c) 8080
-d) 3306
+* A. Storing container logs
+* B. Persistent storage
+* C. Sharing images
+* D. Networking
 
-**25. What does `docker inspect` do?**
-a) Views log
-b) Displays metadata about objects
-c) Starts a container
-d) Installs Docker
+13. Which of these starts a container in detached mode?
 
-**26. What is the purpose of `CMD` in Dockerfile?**
-a) Define environment variables
-b) Run at container start
-c) Copy files
-d) Expose ports
+* A. docker run --bg
+* B. docker start -d
+* C. docker run -d
+* D. docker up -d
 
-**27. Which option exposes ports in Dockerfile?**
-a) CMD
-b) RUN
-c) EXPOSE
-d) ENTRYPOINT
+14. What command removes all stopped containers?
 
-**28. What does `docker network ls` do?**
-a) Lists volumes
-b) Lists containers
-c) Lists available networks
-d) Lists Docker images
+* A. docker prune
+* B. docker container prune
+* C. docker clean
+* D. docker flush
 
-**29. The command to tag a Docker image is:**
-a) docker tag <image> <tag>
-b) docker add-tag
-c) docker image tag
-d) both a and c
+15. Which port does Docker daemon listen on by default?
 
-**30. What is the purpose of ENTRYPOINT in Dockerfile?**
-a) Run scripts
-b) Specify default executable
-c) Start Docker Daemon
-d) Expose ports
+* A. 2375
+* B. 2376
+* C. 8080
+* D. 80
 
-**31. What does `docker system prune` do?**
-a) Removes unused data
-b) Installs Docker
-c) Updates containers
-d) Resets volumes
+16. What does ENTRYPOINT in Dockerfile do?
 
-**32. Which flag detaches a container in background?**
-a) -d
-b) -b
-c) -bg
-d) --detach
+* A. Defines base image
+* B. Sets default executable
+* C. Copies file to image
+* D. Exposes port
 
-**33. Which of the following creates a new container?**
-a) docker image create
-b) docker run
-c) docker start
-d) docker install
+17. What is the default network driver in Docker?
 
-**34. What is the default storage driver in Docker?**
-a) aufs
-b) overlay2
-c) zfs
-d) devicemapper
+* A. host
+* B. bridge
+* C. overlay
+* D. none
 
-**35. Docker Swarm is used for:**
-a) Volume storage
-b) Secrets management
-c) Container orchestration
-d) Network isolation
+18. How to see logs of a Docker container?
 
-**36. Which command pushes an image to Docker Hub?**
-a) docker push
-b) docker save
-c) docker deploy
-d) docker upload
+* A. docker log <id>
+* B. docker showlog <id>
+* C. docker logs <id>
+* D. docker tail <id>
 
-**37. What does `docker info` show?**
-a) Docker logs
-b) Detailed system-wide information
-c) Container history
-d) Compose details
+19. What command is used to tag a Docker image?
 
-**38. What is the maximum number of containers you can run?**
-a) 10
-b) 100
-c) Unlimited (based on system resources)
-d) 256
+* A. docker mark
+* B. docker tag
+* C. docker label
+* D. docker labelimage
 
-**39. Which of these tools scans Docker images for vulnerabilities?**
-a) Hadolint
-b) Trivy
-c) KubeBench
-d) Prometheus
+20. How can you connect a container to a specific network?
 
-**40. What is the benefit of using Alpine base images?**
-a) High memory usage
-b) Large in size
-c) Lightweight and secure
-d) Not compatible with Docker
+* A. docker connect
+* B. docker network attach
+* C. docker run --network
+* D. docker join net
 
-**41. Which of these does NOT isolate containers?**
-a) Namespaces
-b) Cgroups
-c) Firewall
-d) Docker Daemon
+21. What is a multi-stage build?
 
-**42. What is the primary role of Dockerfile?**
-a) Running containers
-b) Writing logs
-c) Building container images
-d) Creating volumes
+* A. Multiple containers in one image
+* B. Using multiple Dockerfiles
+* C. Building images in stages to reduce size
+* D. Rebuilding the image repeatedly
 
-**43. A layer in Docker image is created when:**
-a) Running container
-b) Pulling from registry
-c) Each Dockerfile instruction is executed
-d) Restarting Docker
+22. Which Docker component runs the containers?
 
-**44. Docker images are stored:**
-a) In the kernel
-b) In /var/lib/docker
-c) In /etc/docker
-d) In user’s home directory
+* A. Docker Client
+* B. Docker Daemon
+* C. Docker Engine
+* D. Dockerfile
 
-**45. The command to remove all stopped containers is:**
-a) docker rm -a
-b) docker clean
-c) docker container prune
-d) docker purge
+23. Which flag is used to name a container?
 
-**46. Docker image with multiple layers helps in:**
-a) Faster rebuilds and caching
-b) Debugging logs
-c) Secure networking
-d) Container orchestration
+* A. --n
+* B. --container-name
+* C. --name
+* D. --id
 
-**47. What is Docker context?**
-a) Environmental configuration for CLI
-b) User identity
-c) Directory where Dockerfile is saved
-d) IP address of the host
+24. How do you copy files from container to host?
 
-**48. What is difference between `COPY` and `ADD` in Dockerfile?**
-a) No difference
-b) ADD can also extract tar files
-c) COPY handles URLs
-d) ADD is deprecated
+* A. docker copy out
+* B. docker export
+* C. docker cp
+* D. docker fetch
 
-**49. Which command helps to login to a registry?**
-a) docker login
-b) docker connect
-c) docker auth
-d) docker reg-login
+25. Which layer is shared between images?
 
-**50. Docker was originally developed in which language?**
-a) Python
-b) Go
-c) Java
-d) Ruby
+* A. Container Layer
+* B. Top Layer
+* C. Base Layers
+* D. All layers are unique
+
+26. What does `EXPOSE 80` in Dockerfile mean?
+
+* A. Opens port 80 to the internet
+* B. Makes port 80 available to linked containers
+* C. Makes port 80 default port
+* D. None of the above
+
+27. How do you restart a stopped container?
+
+* A. docker up <id>
+* B. docker restart <id>
+* C. docker rerun <id>
+* D. docker play <id>
+
+28. Which command shows image history?
+
+* A. docker history <image>
+* B. docker log <image>
+* C. docker describe <image>
+* D. docker inspect history
+
+29. What is the purpose of .dockerignore file?
+
+* A. List files to exclude during image build
+* B. Ignore volumes
+* C. Prevent container execution
+* D. List untracked containers
+
+30. How do you run an interactive shell inside a container?
+
+* A. docker connect
+* B. docker run -shell
+* C. docker exec -it <id> /bin/sh
+* D. docker run --cmd bash
+
+31. Which Docker object represents a blueprint for containers?
+
+* A. Container
+* B. Dockerfile
+* C. Image
+* D. Registry
+
+32. What does CMD do in Dockerfile?
+
+* A. Copies files
+* B. Sets environment variables
+* C. Specifies default command to run
+* D. Exposes ports
+
+33. How to inspect detailed info about a container?
+
+* A. docker info <id>
+* B. docker logs <id>
+* C. docker inspect <id>
+* D. docker detail <id>
+
+34. How to remove unused volumes?
+
+* A. docker volume clean
+* B. docker volume rm
+* C. docker volume prune
+* D. docker remove volume
+
+35. What is a Docker Registry?
+
+* A. Service to manage networks
+* B. Centralized logging
+* C. Storage for Docker images
+* D. Image scanner
+
+36. What is the default base directory of Docker images?
+
+* A. /opt/docker
+* B. /var/lib/docker
+* C. /docker/base
+* D. /srv/docker
+
+37. What command shows container stats?
+
+* A. docker top
+* B. docker logs
+* C. docker stats
+* D. docker performance
+
+38. How to rename a running container?
+
+* A. docker rename
+* B. docker mv
+* C. docker change-name
+* D. Cannot rename running container
+
+39. What’s the command to create a custom Docker network?
+
+* A. docker net add
+* B. docker create network
+* C. docker network create
+* D. docker network up
+
+40. What does the -v option do?
+
+* A. View verbose logs
+* B. Version info
+* C. Mount volume
+* D. Validate config
+
+41. Which is a valid base image?
+
+* A. mainos
+* B. linuxcore
+* C. alpine
+* D. containerroot
+
+42. Docker Swarm is used for?
+
+* A. Monitoring
+* B. Log aggregation
+* C. Container orchestration
+* D. Networking only
+
+43. What’s the default bridge network subnet?
+
+* A. 192.168.0.0/16
+* B. 172.17.0.0/16
+* C. 10.0.0.0/16
+* D. 127.0.0.1/8
+
+44. Which tool is used to scan Docker images for vulnerabilities?
+
+* A. Jenkins
+* B. Trivy
+* C. Harbor
+* D. Traefik
+
+45. What’s the difference between ADD and COPY in Dockerfile?
+
+* A. ADD supports remote URLs and unpacking
+* B. COPY is used for volumes only
+* C. ADD adds environment variables
+* D. No difference
+
+46. How to login to Docker Hub?
+
+* A. docker loginhub
+* B. docker login
+* C. docker auth
+* D. docker connect
+
+47. Docker Desktop includes:
+
+* A. Docker Engine
+* B. Docker CLI
+* C. Kubernetes
+* D. All of the above
+
+48. Which flag runs container with auto-remove?
+
+* A. --rm
+* B. --cleanup
+* C. --auto-del
+* D. --erase
+
+49. What command runs a container from an image?
+
+* A. docker make
+* B. docker image run
+* C. docker run
+* D. docker exec
+
+50. Docker images are made up of:
+
+* A. Scripts only
+* B. Layers
+* C. Containers
+* D. Packages

@@ -1,151 +1,151 @@
-### Docker MCQ Answer Key with Explanations
+**Docker Multiple Choice Questions (MCQs)**
 
-**1. c) Containerization**
-Docker is primarily a containerization platform used to package applications and their dependencies.
+1. **B - Containerization**
+   Docker is a platform for developing, shipping, and running containers.
 
-**2. a) Docker Engine**
-Docker Engine is the core component that runs and manages containers.
+2. **B - Application and its dependencies**
+   A Docker container bundles an app with everything it needs to run.
 
-**3. c) LXC**
-Docker initially used LXC (Linux Containers) technology.
+3. **C - Container platform**
+   Docker is a container-based technology, not a virtualization tool.
 
-**4. b) Dockerfile**
-Dockerfile is used to create a Docker image with specific instructions.
+4. **C - docker build**
+   Used to build a Docker image from a Dockerfile.
 
-**5. d) bridge**
-The default Docker network driver is `bridge`.
+5. **A - Dockerfile**
+   Contains instructions to build a Docker image.
 
-**6. a) docker ps**
-`docker ps` shows running containers.
+6. **A - docker ps**
+   Lists all currently running containers.
 
-**7. b) docker build**
-`docker build` is used to build Docker images.
+7. **B - Runs a new container**
+   `docker run` creates and starts a container.
 
-**8. c) Read-only**
-Docker images are immutable and read-only by design.
+8. **C - docker stop \<container\_id>**
+   Gracefully stops a running container.
 
-**9. b) Docker Hub**
-Docker Hub is the default public registry for Docker images.
+9. **D - Both A and C**
+   `docker image rm` and `docker rmi` both remove images.
 
-**10. c) docker rm**
-`docker rm` removes a stopped container.
+10. **C - Public image registry**
+    Docker Hub is a cloud-based registry for Docker images.
 
-**11. b) Removes an image**
-`docker rmi` removes a Docker image.
+11. **C - docker-compose.yml**
+    Used by Docker Compose to define multi-container applications.
 
-**12. c) docker run -it**
-This starts a container in interactive mode with a terminal.
+12. **B - Persistent storage**
+    Docker Volumes store data outside containers.
 
-**13. c) Persist data**
-Volumes store persistent data outside the container.
+13. **C - docker run -d**
+    `-d` flag runs the container in detached mode.
 
-**14. b) docker volume create**
-This command is used to create volumes.
+14. **B - docker container prune**
+    Removes all stopped containers.
 
-**15. c) docker-compose.yml**
-Used by Docker Compose to define multi-container applications.
+15. **A - 2375**
+    This is the default port for non-TLS Docker daemon.
 
-**16. d) docker stop**
-Gracefully stops a running container.
+16. **B - Sets default executable**
+    ENTRYPOINT defines the main executable of the container.
 
-**17. c) public**
-There is no `public` network driver in Docker.
+17. **B - bridge**
+    Default network driver used by Docker.
 
-**18. b) docker logs**
-Shows logs from a container.
+18. **C - docker logs <id>**
+    Shows logs for the specified container.
 
-**19. c) Application sandboxes**
-Containers isolate applications and their dependencies.
+19. **B - docker tag**
+    Used to tag images before pushing to a registry.
 
-**20. c) Run a command inside a running container**
-`docker exec` is used for that purpose.
+20. **C - docker run --network**
+    Attaches container to specified network during `run`.
 
-**21. c) Background process that manages containers**
-Docker Daemon (`dockerd`) is the background service.
+21. **C - Building images in stages to reduce size**
+    Multi-stage builds make smaller, cleaner images.
 
-**22. a) docker ps -a**
-Lists all containers, including stopped ones.
+22. **C - Docker Engine**
+    Core of Docker responsible for building/running containers.
 
-**23. c) Managing multi-container applications**
-Docker Compose helps define and run multiple containers.
+23. **C - --name**
+    `--name` assigns a name to the container.
 
-**24. b) 2375**
-Docker daemon REST API listens on TCP port 2375 (unencrypted).
+24. **C - docker cp**
+    Copies files between container and host.
 
-**25. b) Displays metadata about objects**
-`docker inspect` provides detailed info about containers, images, etc.
+25. **C - Base Layers**
+    Docker uses shared layers across images to save space.
 
-**26. b) Run at container start**
-`CMD` defines the default command to run.
+26. **B - Makes port 80 available to linked containers**
+    `EXPOSE` declares the port containers listen on.
 
-**27. c) EXPOSE**
-Used in Dockerfile to inform Docker about the ports the container listens on.
+27. **B - docker restart <id>**
+    Restarts a stopped or running container.
 
-**28. c) Lists available networks**
-`docker network ls` shows all Docker networks.
+28. **A - docker history <image>**
+    Displays layer-by-layer history of image creation.
 
-**29. d) both a and c**
-Both `docker tag <image> <tag>` and `docker image tag` are valid.
+29. **A - List files to exclude during image build**
+    .dockerignore avoids copying unnecessary files.
 
-**30. b) Specify default executable**
-`ENTRYPOINT` sets the main command for the container.
+30. **C - docker exec -it <id> /bin/sh**
+    Starts an interactive shell session inside the container.
 
-**31. a) Removes unused data**
-`docker system prune` cleans up unused containers, images, networks, etc.
+31. **C - Image**
+    An image is a blueprint from which containers are created.
 
-**32. a) -d**
-`-d` runs the container in detached (background) mode.
+32. **C - Specifies default command to run**
+    CMD provides default arguments for ENTRYPOINT or container.
 
-**33. b) docker run**
-`docker run` creates and starts a new container from an image.
+33. **C - docker inspect <id>**
+    Gives detailed configuration info about a container.
 
-**34. b) overlay2**
-`overlay2` is the default storage driver on most modern systems.
+34. **C - docker volume prune**
+    Deletes all unused Docker volumes.
 
-**35. c) Container orchestration**
-Docker Swarm helps in managing a cluster of Docker nodes.
+35. **C - Storage for Docker images**
+    Registry hosts and serves Docker images.
 
-**36. a) docker push**
-`docker push` uploads a local image to a registry.
+36. **B - /var/lib/docker**
+    Default directory used for Docker storage.
 
-**37. b) Detailed system-wide information**
-`docker info` shows info like containers, images, storage drivers, etc.
+37. **C - docker stats**
+    Shows real-time CPU, memory usage of containers.
 
-**38. c) Unlimited (based on system resources)**
-There is no hard limit; it depends on CPU, memory, and disk.
+38. **D - Cannot rename running container**
+    Containers must be stopped to be renamed.
 
-**39. b) Trivy**
-Trivy is a popular tool to scan Docker images for vulnerabilities.
+39. **C - docker network create**
+    Creates a new custom Docker network.
 
-**40. c) Lightweight and secure**
-Alpine Linux is known for being minimal and secure.
+40. **C - Mount volume**
+    `-v` option mounts host volume into container.
 
-**41. c) Firewall**
-Containers are isolated using namespaces and cgroups, not firewalls.
+41. **C - alpine**
+    Alpine is a minimal and popular base image.
 
-**42. c) Building container images**
-Dockerfiles are used to define how to build an image.
+42. **C - Container orchestration**
+    Docker Swarm manages multiple containers across nodes.
 
-**43. c) Each Dockerfile instruction is executed**
-Each line in Dockerfile creates a new image layer.
+43. **B - 172.17.0.0/16**
+    Default subnet for Docker’s bridge network.
 
-**44. b) In /var/lib/docker**
-By default, Docker stores data in `/var/lib/docker`.
+44. **B - Trivy**
+    Trivy is a vulnerability scanner for Docker images.
 
-**45. c) docker container prune**
-Removes all stopped containers.
+45. **A - ADD supports remote URLs and unpacking**
+    ADD does more than COPY, like fetching URLs or extracting archives.
 
-**46. a) Faster rebuilds and caching**
-Layered images allow Docker to reuse unchanged layers.
+46. **B - docker login**
+    Authenticates to Docker Hub or private registry.
 
-**47. a) Environmental configuration for CLI**
-Docker contexts allow switching between environments (local, remote).
+47. **D - All of the above**
+    Docker Desktop includes CLI, engine, GUI, and Kubernetes.
 
-**48. b) ADD can also extract tar files**
-`ADD` has extra functionality like extracting archives.
+48. **A - --rm**
+    Removes the container after it exits.
 
-**49. a) docker login**
-Used to authenticate with Docker registries.
+49. **C - docker run**
+    Starts a container from a specified image.
 
-**50. b) Go**
-Docker was developed using the Go programming language.
+50. **B - Layers**
+    Docker images consist of read-only layers stacked together.

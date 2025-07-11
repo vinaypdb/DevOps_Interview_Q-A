@@ -8,6 +8,7 @@ Welcome to the **DevOps Interview Q&A** repository — a fully structured, begin
 ---
 
 ## 🧱 Folder Structure
+```
 
 Each tool follows this standardized format:
 
@@ -23,8 +24,7 @@ Each tool follows this standardized format:
 │ └── Answers_with_Explanation.md
 ├── 02_Top_50_QA's.md
 └── 03_Realworld_Projects/
-
-
+```
 ---
 
 ## 🧠 Tools Covered So Far
